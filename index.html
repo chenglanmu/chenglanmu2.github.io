@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用 Markdown 写博客</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #f7f8fa;
+            font-family: system-ui, -apple-system, "Microsoft YaHei", sans-serif;
+            color: #2c3e50;
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+        .blog-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 48px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        .blog-header {
+            margin-bottom: 36px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 24px;
+        }
+        .blog-title {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        .blog-meta {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+            color: #7f8c8d;
+            flex-wrap: wrap;
+        }
+        .markdown-body {
+            font-size: 16px;
+        }
+        .markdown-body p {
+            margin-bottom: 18px;
+        }
+        .markdown-body h1 {
+            font-size: 24px;
+            margin: 32px 0 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #eee;
+        }
+        .markdown-body h2 {
+            font-size: 20px;
+            margin: 28px 0 14px;
+        }
+        .markdown-body code {
+            background: #f4f5f7;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        .markdown-body strong {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+<div class="blog-container">
+    <!-- 博客头部：Front Matter 风格元信息 -->
+    <header class="blog-header">
+        <h1 class="blog-title">用 Markdown 写博客</h1>
+        <div class="blog-meta">
+            <span><i>📅</i> 2026-07-15 · 张家口</span>
+            <span><i>⏱</i> 6 分钟阅读</span>
+            <span><i>🏷</i> #Markdown #博客 #设计</span>
+        </div>
+    </header>
+
+    <!-- 主内容 Markdown 排版正文 -->
+    <main class="markdown-body">
+        <p style="font-size:1.15rem; font-weight:400; color:#2c3e50;">
+            <strong>你好，世界。</strong>这是一个完全使用 <code>Markdown</code> 构建的博客页面。
+            没有复杂的框架，只有干净的内容与舒适的排版。
+        </p >
+
+        <h1 id="why-markdown">为什么选择 Markdown?</h1>
+        <p>
+            Markdown 是一种轻量级标记语言，它允许你使用易读写的纯文本格式编写文档，然后转换为结构化的 HTML。
+            对于博客作者、程序员和技术写作者来说，Markdown 是 <strong>效率与优雅</strong> 的代名词。
+        </p >
+
+        <h2 id="core-features">核心优势</h2>
+        <ul>
+            <li>语法极简，上手成本极低</li>
+            <li>纯文本无冗余格式，不会出现Word复制乱码问题</li>
+            <li>绝大多数博客平台、GitHub、文档站点原生支持</li>
+            <li>可以轻松转为HTML、PDF、公众号排版等多格式</li>
+        </ul>
+
+        <h2 id="my-blog-note">个人博客搭建笔记</h2>
+        <p>
+            前期使用Word文档直接粘贴HTML出现大量中文乱码，根源在于Word富文本携带大量私有格式编码混乱。
+            后续统一使用Markdown书写正文，再渲染为静态HTML，从根源规避编码乱码。
+        </p >
+        <p>
+            部署链路：本地编写Markdown → 转为干净HTML → 上传chenglanmu.github.io仓库 → GitHub Pages自动发布。
+        </p >
+    </main>
+</div>
+</body>
+</html>
